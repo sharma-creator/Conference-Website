@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONFERENCE TRACKS</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+
+</head>
+<body>
+    
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="DATA/rsz_1rsz_logopng.png" ></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa-solid fa-circle-xmark" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="index.html/#about">ABOUT</a></li>
+                    <li><a href="#dates">DATES</a></li>
+                    <li><a href="#tracks">TRACKS</a></li>
+                    <li><a href="#speakers">SPEAKERS</a></li>
+                    <li><a href="#committee">COMMITTEE</a></li>
+                    <li><a href="#partners">PARTNERS</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                    <li><a href="">REGISTER</a></li>
+                </ul>
+
+            </div>
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>CONFERENCE TRACKS</h1>
+    </section>
+
+    <!--MARQUEE - FOR A SAMPLE TEXT WHICH WILL MOVE FROM RIGTH TO LEFT-->
+    <br>
+    <marquee class="blink" behavior="scroll" direction="left"><b>DOWNLOAD BROCHURE</b></marquee>
+    <br>
+    <marquee class="blink" behavior="scroll" direction="left"><b>Paper Submission window will open from December 25, 2022</b></marquee>
+    <br>
+    
+    <!--Conference tracks-->
+
+    <section>
+        <div class="track">
+            <div class="track-row" id="track1">
+                <h2>TRACK 1: <span>Material Processing and their Characterization</span></h2>
+
+                <ul class="points">
+                    <li>Advanced Joining techniques</li>
+                    <li>Advanced machining processes</li>
+                    <li>Advanced metal forming, casting techniques</li>
+                    <li>High-speed and Hybrid Machining</li>
+                    <li>Alternate materials processing</li>
+                    <li>High-Energy Beam Processing</li>
+                    <li>Laser Based Manufacturing</li>
+                    <li>Additive manufacturing Process</li>
+                    <li>Non-destructive Testing</li>
+                    <li>Powder Metallurgy and Ceramic Forming</li>
+                    <li>Advances in Material Characterization</li>
+                </ul>
+            </div>
+            <div class="track-row" id="track2">
+                <h2>TRACK 2: <span>Soft Computing in Mechanical Processing</span></h2>
+
+                <ul class="points">
+                    <li>Computational Fluid Dynamics</li>
+                    <li>FEA/FEM analysis of Materials processing</li>
+                    <li>Numerical Modelling and Simulation</li>
+                    <li>Optimization Techniques in Digital Manufacturing</li>
+                    <li>Advanced Manufacturing Technologies</li>
+                    <li>Virtual Manufacturing</li>
+                    <li>Precision engineering and metrology</li>
+                    <li>CAD/CAM/CAE</li>
+                    <li>Artificial Intelligence in manufacturing processes</li>
+                    <li>Green Manufacturing& eco-sustainability</li>
+                </ul>
+            </div>
+            <div class="track-row" id="track3">
+                <h2>TRACK 3: <span>Developments of composite Materials</span></h2>
+
+                <ul class="points">
+                    <li>Composite and Polymer Manufacturing</li>
+                    <li>Composites, Intermetallic</li>
+                    <li>Fabrication Process of Nano materials and Nano devices</li>
+                    <li>Nano fluidics</li>
+                    <li>Functionally Graded Materials</li>
+                    <li>Future generation materials</li>
+                    <li>SMART materials</li>
+                    <li>Super Alloys</li>
+                    <li>Nano materials</li>
+                </ul>
+            </div>
+            <div class="track-row" id="track4">
+                <h2>TRACK 4: <span>Thermal Augmentation Processes and Materials</span></h2>
+
+                <ul class="points">
+                    <li>Renewable Energy and thermal applications</li>
+                    <li>Biofuels production and thermal applications</li>
+                    <li>Biofuels combustion characterization</li>
+                    <li>Computational fluid dynamics applied to thermal systems</li>
+                    <li>Energy Conversion and materials</li>
+                    <li>Energy Storage and materials</li>
+                    <li>Smart Grid</li>
+                    <li>Thermally-Enhanced Processes and Materials</li>
+                    <li>E-vehicle technology</li>
+                </ul>
+            </div>
+            <div class="track-row" id="track5">
+                <h2>TRACK 5: <span>Strategic Applications Materials</span></h2>
+
+                <ul class="points">
+                    <li>PV-Cell materials</li>
+                    <li>Stealth materials& technology</li>
+                    <li>Nano-micro devices and integration</li>
+                    <li>Materials for space applications</li>
+                    <li>Thermodynamics, rotating detonation engines and Propulsion</li>
+                    <li>Optimization of hybrid energy systems</li>
+                    <li>Materials parameters in modeling and simulations</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="partner" id="partner">
+            <h1>ICMME 2023 <span>PARTNERS</span></h1>
+
+            <div class="row">
+                <div class="partner-col">
+                    <img src="DATA\logo\gla.png" alt="">
+                </div>
+                <div class="partner-col">
+                    <img src="DATA\logo\IRGES.png" alt="">
+                </div>
+                <div class="partner-col">
+                    <img src="DATA\logo\UFRGS.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+<!----Java Script for toggle Menu ---->
+    <script>
+
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+
+    </script>
+
+
+</body>
+</html>
